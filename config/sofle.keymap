@@ -40,6 +40,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        cmdcopy {
+            bindings = <&kp LC(LS(C))>;
+            key-positions = <38 39>;
+        };
+
+        cmdpaste {
+            bindings = <&kp LC(LS(V))>;
+            key-positions = <39 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
