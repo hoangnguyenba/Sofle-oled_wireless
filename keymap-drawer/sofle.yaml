@@ -244,3 +244,8 @@ layers:
   - ''
   - ''
   - ''
+combos:
+- p: [38, 39]
+  k: Ctl+Sft+C
+- p: [39, 40]
+  k: Ctl+Sft+V
