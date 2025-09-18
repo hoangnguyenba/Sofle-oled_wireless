@@ -1,7 +1,66 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, CAPSLOCK, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''',
-    LSHFT, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LCTRL, LALT, LWIN, lower, RET, SPACE, raise, RWIN, RALT, RCTRL]
+  default:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - DELETE
+  - CAPSLOCK
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - TAB
+  - A
+  - {t: S, h: adjust}
+  - {t: D, h: raise}
+  - {t: F, h: lower}
+  - G
+  - H
+  - {t: J, h: lower}
+  - {t: K, h: raise}
+  - {t: L, h: adjust}
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - MUTE
+  - ''
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  - LCTRL
+  - LALT
+  - LWIN
+  - lower
+  - RET
+  - SPACE
+  - raise
+  - RWIN
+  - RALT
+  - RCTRL
   lower:
   - {t: ▽, type: trans}
   - F1
@@ -31,7 +90,7 @@ layers:
   - '!'
   - '@'
   - '#'
-  - $
+  - {t: $, type: held}
   - '%'
   - ^
   - '&'
@@ -56,7 +115,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -91,7 +150,7 @@ layers:
   - {t: ▽, type: trans}
   - '='
   - '-'
-  - +
+  - {t: +, type: held}
   - '{'
   - '}'
   - PG DN
@@ -120,7 +179,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -151,7 +210,7 @@ layers:
   - ''
   - ''
   - RGB BRD
-  - RGB BRI
+  - {t: RGB BRI, type: held}
   - ''
   - ''
   - ''
@@ -178,10 +237,10 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
   - ''
   - ''
-  - {type: held}
+  - ''
+  - ''
   - ''
   - ''
   - ''
